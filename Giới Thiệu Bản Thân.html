@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân - Hoàng Thân Quốc Thắng</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Navigation */
+        .main-nav {
+            margin-top: 12px;
+        }
+        .main-nav a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 14px;
+            background: rgba(255,255,255,0.08);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+        .main-nav a:hover {
+            background: rgba(255,255,255,0.18);
+            transform: translateY(-2px);
+        }
+        
+        main {
+            padding: 50px 20px 100px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        section:hover {
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 0;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 12px;
+        }
+        
+        section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+        
+        .contact-section h3 {
+            color: #667eea;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 1.05em;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: rgba(102, 126, 234, 0.2);
+            padding-left: 15px;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: #667eea;
+            min-width: 120px;
+        }
+        
+        .contact-value {
+            color: #555;
+        }
+        
+        .contact-value a {
+            color: #0084ff;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-value a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Embedded schedule */
+        .embed-schedule { margin-top: 20px; }
+        .embed-schedule iframe { width: 100%; height: 520px; border: none; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+        @media (max-width: 600px) { .embed-schedule iframe { height: 420px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="gioi-thieu"> Giới Thiệu Bản Thân</h1>
+        <nav class="main-nav">
+            <a href="#gioi-thieu">Giới Thiệu</a>
+            <a href="#" onclick="openSchedule(event)" title="Mở Thời Khóa Biểu (tab mới)">Thời Khóa Biểu</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>📝 Thông Tin Cá Nhân</h2>
+            <p>Xin chào! Tôi tên là <strong>Hoàng Thân Quốc Thắng</strong>. Tôi là một sinh viên đến từ Quy Nhơn, học ngành Công Nghệ Thông Tin. Tôi có đam mê mạnh mẽ với công nghệ máy tính và luôn muốn không ngừng cải thiện kỹ năng của mình.</p>
+        </section>
+        
+        <section>
+            <h2>🎯 Sở Thích</h2>
+            <ul>
+                <li>🎣 Câu Cá</li>
+                <li>✈️ Du lịch</li>
+                <li>🎬 Xem Phim</li>
+                <li>💻 Học lập trình</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>🚀 Mục Tiêu Tương Lai</h2>
+            <p>Tôi mong muốn phát triển kỹ năng của mình trong lĩnh vực <strong>An Toàn Thông Tin & An Ninh Mạng</strong> và đóng góp vào các dự án có ý nghĩa. Tôi hy vọng sẽ có cơ hội làm việc với những người tài năng và học hỏi từ họ để trở thành một chuyên gia trong ngành.</p>
+        </section>
+        
+        <section class="contact-section">
+            <h3>📞 Liên Hệ</h3>
+            <div class="contact-item">
+                <span class="contact-label">Email:</span>
+                <span class="contact-value"><a href="mailto:qthang1610@gmail.com">qthang1610@gmail.com</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Số điện thoại:</span>
+                <span class="contact-value"><a href="tel:0356054611">0356054611</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Địa chỉ:</span>
+                <span class="contact-value">Quy Nhơn, Bình Định</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">GitHub:</span>
+                <span class="contact-value"><a href="https://github.com/hoangthanquocthang" target="_blank">github.com/hoangthanquocthang</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Thời Khóa Biểu:</span>
+                <span class="contact-value"><a href="#" onclick="openSchedule(event)" title="Mở Thời Khóa Biểu (tab mới)">Xem Thời Khóa Biểu</a></span>
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <p>&copy; 2026 Giới Thiệu Bản Thân - Hoàng Thân Quốc Thắng</p>
+    </footer>
+
+    <script>
+        function openSchedule(e) {
+            if (e) e.preventDefault();
+            var w = window.open('Thời Khóa Biểu.html', '_blank');
+            // Keep opener so schedule can close itself. If popup blocked, navigate current tab.
+            if (!w) { window.location.href = 'Thời Khóa Biểu.html'; }
+        }
+    </script>
+</body>
+</html>
+
